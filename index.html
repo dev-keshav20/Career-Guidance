@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Guidance</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script type="module" src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Career Guidance</h1>
+    <p>Explore various career options based on your interest.</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <!-- <h2>Add a New Career</h2> -->
+      <h1>Career Guidance Form</h1>
+
+      <div class="form-container">
+        <form id="careerForm">
+          <label for="title">Career Title</label>
+          <input type="text" id="title" name="title" required placeholder="Enter career title" />
+    
+          <label for="scope">Scope</label>
+          <input type="text" id="scope" name="scope" required placeholder="Enter career scope" />
+    
+          <label for="eligibility">Eligibility</label>
+          <input type="text" id="eligibility" name="eligibility" required placeholder="Enter eligibility criteria" />
+    
+          <label for="description">Description</label>
+          <textarea id="description" name="description" required placeholder="Enter career description"></textarea>
+    
+          <label for="image">Image URL</label>
+          <input type="text" id="image" name="image" required placeholder="Enter image URL" />
+    
+          <label for="resources">Resources</label>
+          <textarea id="resources" name="resources" placeholder="Enter resources (e.g., course links, books) separated by commas"></textarea>
+    
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <h2 style="margin-top: 30px;">Available Careers</h2>
+    <div id="career-list" class="career-list"></div>
+  </main>
+
+  <footer>
+    <p>Made by Keshav Tanwar</p>
+  </footer>
+</body>
+</html>
